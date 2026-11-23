@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1419">
+<meta name="description" content="Jonathan Systems LLC studies how solar power, water reclamation, hydrogen, and carbon conversion can work together through engineered photosynthesis.">
+<title>Jonathan Systems | Engineered Photosynthesis</title>
+<link rel="stylesheet" href="styles.css">
+<script src="site.js" defer></script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="#top" aria-label="Jonathan Systems home">
+      <span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>JONATHAN <b>SYSTEMS</b></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#systems">Systems</a>
+      <a href="#supervision">JONATHAN [si]</a>
+      <a href="#usef">USEF</a>
+    </nav>
+    <a href="#contact" class="button button-small">Contact</a>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="shell hero-content">
+      <p class="eyebrow"><span></span> ENGINEERED PHOTOSYNTHESIS</p>
+      <h1 id="hero-title">From sunlight<br>to <em>stored energy.</em></h1>
+      <p class="hero-copy">Jonathan Systems studies how solar power, water reclamation, hydrogen production, and carbon conversion can work together.</p>
+      <div class="actions">
+        <a href="#systems" class="button button-primary">Explore the systems</a>
+        <a href="#usef" class="button button-glass">Try the USEF example</a>
+      </div>
+    </div>
+    <div class="shell hero-meta"><span>Concept illustration</span><span>Research &amp; digital twins</span></div>
+  </section>
+  <section class="section systems" id="systems" aria-labelledby="systems-title">
+    <div class="shell">
+      <div class="section-intro">
+        <div><p class="eyebrow"><span></span> SYSTEM ARCHITECTURE</p><h2 id="systems-title">Water, hydrogen,<br>and carbon.</h2></div>
+        <p>Each subsystem has a distinct role. Together they let us study how water, energy, and materials move through an integrated design.</p>
+      </div>
+      <div class="system-grid">
+        <article class="system-card">
+          <div class="glyph water" aria-hidden="true"><i></i><i></i><i></i></div>
+          <p class="card-category">WATER RECLAMATION</p>
+          <h3>Jonathan Systems basic</h3>
+          <p>Models water treatment and tracks how much treated water is available for downstream processes.</p>
+        </article>
+        <article class="system-card">
+          <div class="glyph hydrogen" aria-hidden="true"><i></i><i></i><i></i></div>
+          <p class="card-category">HYDROGEN</p>
+          <h3>HydrogenLoop</h3>
+          <p>Models how electricity and water become hydrogen, from electrolysis through storage and use.</p>
+        </article>
+        <article class="system-card">
+          <div class="glyph carbon" aria-hidden="true"><i></i><i></i><i></i></div>
+          <p class="card-category">CARBON CONVERSION</p>
+          <h3>CarbonLoop</h3>
+          <p>Studies pathways that combine captured carbon dioxide with hydrogen to produce methane.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section supervision" id="supervision" aria-labelledby="supervision-title">
+    <div class="shell supervision-grid">
+      <div>
+        <p class="eyebrow"><span></span> SUPERVISORY INTELLIGENCE</p>
+        <h2 id="supervision-title">JONATHAN <em>[si]</em></h2>
+        <p class="section-copy">Our research and engineering assistant uses digital twins to compare system designs. USEF is its engineering backbone for tracing mass and energy across subsystems.</p>
+      </div>
+      <ol class="workflow">
+        <li><span>01</span><div><strong>Model the system</strong><p>Define inputs, operating assumptions, and system boundaries.</p></div></li>
+        <li><span>02</span><div><strong>Check the balances</strong><p>Trace mass and energy through each subsystem.</p></div></li>
+        <li><span>03</span><div><strong>Compare scenarios</strong><p>Test how results change as assumptions vary.</p></div></li>
+      </ol>
+    </div>
+  </section>
+  <section class="section calculator-section" id="usef" aria-labelledby="usef-title">
+    <div class="shell calculator-grid">
+      <div>
+        <p class="eyebrow"><span></span> UNIFIED SPECIFIC-ENERGY FRAMEWORK</p>
+        <h2 id="usef-title">What does one kilogram of hydrogen cost in energy?</h2>
+        <p class="section-copy">USEF expresses energy on a common per-mass basis. In this example, change the electricity input and electrolyzer efficiency to see how they affect modeled hydrogen output and electricity use per kilogram.</p>
+      </div>
+      <div class="calculator">
+        <div class="calc-header"><h3>Hydrogen production</h3><span>Illustrative simulation</span></div>
+        <label for="energy">Electricity input <span id="energy-value">100 kWh</span></label>
+        <input type="range" id="energy" min="25" max="500" step="25" value="100">
+        <label for="efficiency">Electrolyzer efficiency (LHV) <span id="efficiency-value">70%</span></label>
+        <input type="range" id="efficiency" min="45" max="85" step="1" value="70">
+        <div class="readouts" aria-live="polite" aria-atomic="true">
+          <div><span>Hydrogen produced</span><output id="mass" for="energy efficiency">2.10 <small>kg</small></output></div>
+          <div><span>Electricity per kilogram</span><output id="specific" for="efficiency">47.6 <small>kWh/kg</small></output><span id="specific-mj">171.4 MJ/kg</span></div>
+        </div>
+        <p class="assumptions">Assumes a hydrogen lower heating value (LHV) of 33.33 kWh/kg. Covers electrolysis only. Compression and storage are outside this example.</p>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="shell contact-inner">
+      <div><h2 id="contact-title">Work with Jonathan Systems</h2><p>Get in touch about research collaboration, licensing, or technology partnerships.</p></div>
+      <a href="https://jonathansystems.com/" class="button button-primary">Contact Jonathan Systems</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="shell footer-inner">
+    <a class="brand" href="#top"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span>JONATHAN <b>SYSTEMS</b></span></a>
+    <span>Jonathan Systems LLC</span>
+  </div>
+</footer>
+</body>
+</html>
